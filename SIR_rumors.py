@@ -5,7 +5,6 @@ from scipy.integrate import solve_ivp
 
 
 class SystemSolver:
-    """Solves the SIR model equations with additional parameters d and e."""
 
     @staticmethod
     def SIR(t, ISR, a, b, c, d, e):
@@ -14,11 +13,6 @@ class SystemSolver:
         DS = b * a * I * S - a * S * (c * S + d * R) - e * S
         DR = (1 - b) * a * I * S + a * S * (c * S + d * R) + e * S
         return [DI, DS, DR]
-        # I, S, R = ISR
-        # DI = -a * c * I * S
-        # DS = a * c * I * S - a * b * S
-        # DR = a * b * S
-        # return [DI, DS, DR]
 
     def sol_SIR(self, t, a, b, c, d, e):
         N = 10**6
@@ -44,7 +38,6 @@ class SystemSolver:
 
 
 class SIRPlotter:
-    """Handles plotting for the SIR model."""
 
     def __init__(self, ax, solver):
         self.ax = ax
@@ -57,7 +50,6 @@ class SIRPlotter:
         self.ax.set_title("Série Temporal do Sistema SIR")
 
     def plot(self, t, I, S, R):
-        """Plot the SIR model solutions for I, S, and R."""
         self.ax.clear()
         self.init_plot()
         self.ax.plot(t, I, color="red", label="I(t)")
@@ -67,7 +59,6 @@ class SIRPlotter:
 
 
 class SIRSliders:
-    """Creates sliders to control the parameters of the SIR model."""
 
     def __init__(self, fig, ax, plotter, solver, init_vals):
         self.fig = fig
@@ -101,7 +92,7 @@ class SIRSliders:
         self.t_slider.on_changed(self.update_plot)
 
     def create_sliders(self):
-        """Create and return sliders for a, b, c, d, e, and t."""
+
         ax_a = self.fig.add_axes([0.15, 0.27, 0.75, 0.03])
         ax_b = self.fig.add_axes([0.15, 0.22, 0.75, 0.03])
         ax_c = self.fig.add_axes([0.15, 0.17, 0.75, 0.03])
@@ -129,7 +120,6 @@ class SIRSliders:
         return a_slider, b_slider, c_slider, d_slider, e_slider, t_slider
 
     def update_plot(self, val):
-        """Update the plot based on the current slider values."""
         t = self.t_slider.val
         a = self.a_slider.val
         b = self.b_slider.val
@@ -142,7 +132,6 @@ class SIRSliders:
 
 
 class SIRApp:
-    """Main class to run the SIR model visualization with interactive sliders."""
 
     def __init__(self):
         self.solver = SystemSolver()
@@ -170,7 +159,7 @@ class SIRApp:
         self.add_reset_button()
 
     def add_reset_button(self):
-        """Create reset button"""
+
         resetax = self.fig.add_axes([0.01, 0.15, 0.1, 0.04])
         global button
         button = Button(resetax, "Reset", hovercolor="0.975")
@@ -184,7 +173,6 @@ class SIRApp:
         button.on_clicked(reset)
 
     def run(self):
-        """Run the app to display the plot and sliders."""
         plt.show()
 
 
