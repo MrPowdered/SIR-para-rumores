@@ -27,11 +27,11 @@ where $ I + S + R = 1 $.
 
 ### Parameters
 
-- ** $\bar{k}$ **: Average number of contacts per individual.
-- ** $\lambda$ **: Transmission rate of the rumor from spreaders to ignorants.
-- **$ \eta $**: Removal rate due to stiflers' influence.
-- **$ \gamma $**: Removal rate due to ignorant influence.
-- **$ \delta $**: Spontaneous removal rate of spreaders.
+-  $\bar{k}$: Average number of contacts per individual.
+-  $\lambda$: Transmission rate of the rumor from spreaders to ignorants.
+- $\eta $: Removal rate due to stiflers' influence.
+- $\gamma $: Removal rate due to ignorant influence.
+- $\delta $: Spontaneous removal rate of spreaders.
 
 ### Assumptions
 
@@ -42,22 +42,22 @@ where $ I + S + R = 1 $.
 ## Features
 
 - **Interactive Graph**: Visualize how the rumor spreads over time through the interactive graph, with sliders to adjust parameters and observe the impact on rumor dynamics.
-- **Real-time Simulation**: Adjust parameters such as $ \lambda $, $ \eta $, $ \gamma $, $ \delta $, and $ \bar{k} $ to see how they affect the percentages of ignorants, spreaders, and stiflers in real time.
+- **Real-time Simulation**: Adjust parameters such as $\lambda$, $\eta$, $\gamma$, $\delta$, and $\bar{k}$ to see how they affect the percentages of ignorants, spreaders, and stiflers in real time.
 - **Dynamic Behavior**: Study the behavior of each population group over time to identify critical points in the rumor's spread and stifling process.
 
 ## Usage
 
 1. **Install Required Libraries**: Make sure you have the necessary dependencies installed to run this program (e.g., Matplotlib for visualization, or any interactive graph library your program uses).
 2. **Run the Program**: Execute the script to launch the interactive simulation.
-3. **Adjust Parameters**: Use the sliders to change $ \lambda $, $ \eta $, $ \gamma $, $ \delta $, and $ \bar{k} $, observing how these changes affect the dynamics of the rumor.
+3. **Adjust Parameters**: Use the sliders to change $\lambda$, $\eta$, $\gamma$, $\delta$, and $\bar{k}$, observing how these changes affect the dynamics of the rumor.
 4. **Analyze Results**: Review how different parameter values influence the spread and eventual suppression of the rumor.
 
 ## Example Scenarios
 
 Try experimenting with various scenarios:
-- **High Transmission Rate ($ \lambda $)**: Observe the rapid initial spread among ignorants.
-- **Increased Stifler Influence ($ \eta $)**: Watch how stiflers quickly diminish the number of spreaders.
-- **Higher Spontaneous Removal ($ \delta $)**: See how spreaders lose interest on their own, independent of other factors.
+- **High Transmission Rate ($\lambda$)**: Observe the rapid initial spread among ignorants.
+- **Increased Stifler Influence ($\eta$)**: Watch how stiflers quickly diminish the number of spreaders.
+- **Higher Spontaneous Removal ($\delta$)**: See how spreaders lose interest on their own, independent of other factors.
 
 ## Contributing
 
