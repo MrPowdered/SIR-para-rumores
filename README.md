@@ -12,7 +12,7 @@ The SIR model for rumor spreading assumes:
 The dynamics of these groups are governed by the following differential equations:
 
 
-![equation]https://latex.codecogs.com/svg.image?\begin{cases}\frac{dI}{dt}=-\bar{k}I&space;S,\\\frac{dS}{dt}=\lambda\bar{k}I&space;S-\bar{k}S(\gamma&space;S&plus;\eta&space;R)-\delta&space;S,\\\frac{dR}{dt}=(1-\lambda)\bar{k}I&space;S&plus;\bar{k}S(\gamma&space;S&plus;\eta&space;R)&plus;\delta&space;S,\end{cases}
+![equation](https://latex.codecogs.com/svg.image?\begin{cases}\frac{dI}{dt}=-\bar{k}I&space;S,\\\frac{dS}{dt}=\lambda\bar{k}I&space;S-\bar{k}S(\gamma&space;S&plus;\eta&space;R)-\delta&space;S,\\\frac{dR}{dt}=(1-\lambda)\bar{k}I&space;S&plus;\bar{k}S(\gamma&space;S&plus;\eta&space;R)&plus;\delta&space;S,\end{cases})
 
 
 <!-- \[ -->
