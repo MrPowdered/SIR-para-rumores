@@ -1,6 +1,6 @@
 # README: Interactive SIR Model for Rumor Spreading
 
-This project provides an interactive tool to simulate the **SIR model** for rumor spreading model from the article [Zhao et al., 2013](https://www.sciencedirect.com/science/article/pii/S037843711200934X)  , which divides a population into three categories: **Ignorants (I)**, **Spreaders (S)**, and **Stiflers (R)**. This model helps analyze how a rumor propagates, spreads, and eventually ceases within a community, based on specific parameters that influence the interaction rates and dynamics of rumor transmission.
+This program is an interactive tool to simulate the **SIR model** for rumor spreading model from the article [Zhao et al., 2013](https://www.sciencedirect.com/science/article/pii/S037843711200934X).
 
 ## Model Overview
 
@@ -9,8 +9,7 @@ The SIR model for rumor spreading assumes:
 - **Spreaders (S)**: Individuals actively spreading the rumor.
 - **Stiflers (R)**: Individuals who have heard the rumor but are no longer spreading it.
 
-The dynamics of these groups are governed by the following differential equations:
-
+The model is given by
 
 $$
 \begin{cases}
@@ -20,7 +19,7 @@ $$
 \end{cases}
 $$
 
-where $ I + S + R = 1 $.
+notice that $ I + S + R = 1 $.
 
 ### Parameters
 
@@ -30,22 +29,10 @@ where $ I + S + R = 1 $.
 - $\gamma $: Removal rate due to ignorant influence.
 - $\delta $: Spontaneous removal rate of spreaders.
 
-### Assumptions
-
-- The total population remains constant.
-- Each individual in the population belongs to only one group at a time.
-- Interaction rates and removal influences are homogeneously applied across the population.
-
-## Features
-
-- **Interactive Graph**: Visualize how the rumor spreads over time through the interactive graph, with sliders to adjust parameters and observe the impact on rumor dynamics.
-- **Real-time Simulation**: Adjust parameters such as $\lambda$, $\eta$, $\gamma$, $\delta$, and $\bar{k}$ to see how they affect the percentages of ignorants, spreaders, and stiflers in real time.
-- **Dynamic Behavior**: Study the behavior of each population group over time to identify critical points in the rumor's spread and stifling process.
 
 ## Usage
 
-1. **Install Required Libraries**: Make sure you have the necessary dependencies installed to run this program 
-2. **Run the Program**: Execute the script to launch the interactive simulation.
+- As long as you have python together with its numpy, scipy and the matplotlib libraries installed, this program runs just like any other.
 
 
 ## License
