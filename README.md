@@ -27,8 +27,8 @@ where $ I + S + R = 1 $.
 
 ### Parameters
 
-- **$ \bar{k} $**: Average number of contacts per individual.
-- **$ \lambda $**: Transmission rate of the rumor from spreaders to ignorants.
+- ** $\bar{k}$ **: Average number of contacts per individual.
+- ** $\lambda$ **: Transmission rate of the rumor from spreaders to ignorants.
 - **$ \eta $**: Removal rate due to stiflers' influence.
 - **$ \gamma $**: Removal rate due to ignorant influence.
 - **$ \delta $**: Spontaneous removal rate of spreaders.
